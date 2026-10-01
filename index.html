@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Project Application Form</title>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Creative Project Application Form</h1>
+
+    <form>
+        <!-- El label envuelve el texto y se conecta con el ID del input--> 
+       <label>1. Full Name:</label>
+       <div class="name-row">
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" required><input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+        </div>
+
+       <label for="email">2. Email:</label>
+        <div class="input-with-icon">
+            <i class="fa-solid fa-envelope icon"></i>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+     
+       <label for="contact">3. Contact:</label>
+       <div class="input-with-icon">
+<i class="fa-solid fa-phone icon"></i>
+        <input type="text" id="contact" name="contact" placeholder="+1 234 567 8900" required>
+</div>
+
+        <label for="project">4. Project Type:</label>
+        <select id="project" name="project">
+            <option value="" disabled selected>Select a project</option>
+            <option value="website">Website</option>
+            <option value="application">Application</option>
+            <option value="apis">APIs</option>
+            <option value="landing page">Landing Page</option>
+        </select>
+
+        <label for="message">5. Project Description:</label>
+        <div class="input-with-icon">
+            <i class="fa-solid fa-pen-to-square icon icon-textarea"></i>
+            <textarea id="message" name="message" placeholder="Describe the simple project you have in mind..." required></textarea>
+        </div>
+
+        <label for="deadline">6. Expected Deadline:</label>
+        <div class="input-with-icon">
+            <i class="fa-solid fa-calendar icon"></i>
+            <input type="date" id="deadline" name="deadline" required>
+        </div>
+        
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+</body>
+</html>
