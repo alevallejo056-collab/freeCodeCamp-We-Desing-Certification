@@ -82,7 +82,7 @@ textarea {
   color: #333;
 }
 
-/* Espacio extra en la izquierda para los inputs con icono */
+/* Extra space on the left for inputs with icons */
 .input-with-icon input,
 .input-with-icon textarea {
   padding-left: 42px; 
@@ -94,14 +94,14 @@ textarea {
   min-height: 100px;
 }
 
-/* Efecto al hacer clic (Focus) */
+/* Click effect (Focus) */
 input:focus, select:focus, textarea:focus {
   border: 2px solid #3b5998; 
   outline: none;
   background-color: #f8fbff;
 }
 
-/* Botón de Submit */
+/* Submit button */
 button {
   width: 100%;
   padding: 15px;
